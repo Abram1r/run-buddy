@@ -45,7 +45,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 15px;;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -360,4 +360,28 @@ height: 400px;
 
 .flex-row{
   display: flex;
+}
+
+/* Media Query for Smaller Desktop Screens and smaller */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied to screens smaller than 980 px */
+    color: tomato;
+  }
+}
+
+/* Media Query for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /*this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* Media Query for Mobile Phones and Smaller */
+@media screen and (max-width:575px) {
+  header h1 {
+    /*this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
 }
